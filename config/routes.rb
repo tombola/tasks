@@ -1,4 +1,8 @@
 Tasks::Application.routes.draw do
+  get "tasks/index"
+  # uses 'resources' to create RESTful routes (x7 verbs)
+  resources :tasks
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
