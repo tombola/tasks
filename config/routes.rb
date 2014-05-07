@@ -1,4 +1,5 @@
 Tasks::Application.routes.draw do
+  root to: 'tasks#index'
   get "tasks/index"
   # uses 'resources' to create RESTful routes (x7 verbs)
   resources :tasks
